@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/cheer')
+  getCheer(): Promise<any> {
+    return this.appService.getCheer();
+  }
 }
